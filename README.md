@@ -53,7 +53,12 @@ npm i -g @nohost/server --registry=https://r.npm.taobao.org
 ``` sh
 n2 start
 ```
-> 也可以启动时直接设置当前 Nohost 服务到域名 `n2 restart -o nohost.imweb.io`
+> 也可以启动时直接设置当前 Nohost 服务
+
+
+
+
+域名 `n2 restart -o nohost.imweb.io`
 > Nohost 的默认端口为 8080，如果需要自定义端口，可以通过 `n2 restart -p 80` 设置。
 > 如果命令行提示没有对应命令，检查下系统环境变量 `PATH` 配置，看看 Nohost 安装后生成的命令所在目录是否已添加到 `PATH`。
 
@@ -128,7 +133,7 @@ Nohost 本身就是一个代理，可以直接配置浏览器或系统代理访�
 ![个人账号页面](https://user-images.githubusercontent.com/11450939/69358193-6fac3680-0cc1-11ea-9406-0f036d888d7c.png)
 ![image](https://user-images.githubusercontent.com/11450939/69358459-d92c4500-0cc1-11ea-8263-08bb216fc357.png)
 
-创建完环境后，可以在环境里面配置任何 Whistle 规则，跟普通到本地 Whistle 功能一模一样，甚至更多。每个实例可以建立上百个账号，每个账号可以建立上百个环境，具体取决于你到机器性能。
+创建完环境后，可以在环境里面配置任何 Whistle 规则，跟普通到本地 Whistle 功能一模一样，甚至更多。每个实例可以建立上百个账号，每个账号可以建立上百个环境，具体取决于你的机器性能。
 
 ## <a href="#config" id="config">六. 配置</a>
 默认情况下，只有证书里面域名的请求才会被转发到各个账号，且 html 类型的内容会自动注入小圆点，但在实际应用中你可能会遇到以下问题：
